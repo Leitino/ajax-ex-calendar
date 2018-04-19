@@ -15,16 +15,15 @@ $(function() {
       },
       success:function(data) {
         console.log(data)
-          var daysInMonth = moment('2017-01').daysInMonth()
-          console.log(daysInMonth)
-          for (var i = 1; i <= daysInMonth; i++) {
-            console.log(i)
-          }
 
-
+        var daysInMonth = moment('2017-01').daysInMonth()
+        console.log(daysInMonth)
+        $('.risultati_giorni').html('')
+        for (var i = 1; i <= daysInMonth; i++) {
+          $('.risultati_giorni').append('<li> '+ i + '</li>')
+        }
 
       }
-
     });
 
   })
