@@ -32,10 +32,11 @@ $(function() {
       },
       success:function(data) {
         for (var i = 0; i < data.holidays.length; i++) {
-          var festaymd = data.holidays[i].date;
+          var festaymd = data.holidays[i].date
+          var nomefesta = data.holidays[i].name
           $('.date-item').each(function() {
             if ($(this).attr('dateymd') == festaymd)
-            $(this).addClass('red')
+            $(this).addClass('red').append('<div class="date-nome">'+nomefesta +'</div>')
           })
         }
      }
