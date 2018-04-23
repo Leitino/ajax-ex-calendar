@@ -19,7 +19,6 @@ $(function() {
     $('.container').html('')
     for (var i = 1; i <= giorni; i++) {
       var day = moment('2017-' + mese + '-' + i)
-      console.log(day)
       $('.container').append('<div class ="date-item" dateymd="'+day.format('YYYY-MM-DD')+'">'+ i + meseinlettere + '</div>')
     }
     $.ajax({

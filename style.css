@@ -10,6 +10,19 @@ body{
   max-height: 100%;
   background-color: #eeeeee;
 }
+.container{
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
 .red{
   color: red;
+}
+.date-item{
+  width:100px;
+  height: 100px;
+  border: 1px solid black;
 }
