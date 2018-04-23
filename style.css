@@ -14,12 +14,12 @@ body{
   width: 700px;
   height: 500px;
   margin: auto;
-  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
 }
 .red{
   color: red;
+  background-color: rgba(237, 68, 68, 0.3);
 }
 .date-item{
   width:100px;

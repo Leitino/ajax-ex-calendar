@@ -36,7 +36,6 @@ $(function() {
           $('.date-item').each(function() {
             if ($(this).attr('dateymd') == festaymd)
             $(this).addClass('red')
-
           })
         }
      }
